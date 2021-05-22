@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+/* Nav Bar Container  */
+.nav-container {
+    height: 100px;
+    /* border: 1px solid slateblue; */
+    position: fixed;
+    width: 100%;
+    transition: height 0.8s ease-in;
+    z-index: 999;
+}
+.nav-container nav {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ropa Sans', sans-serif;
+    align-items: center;
+}
+.nav-container nav .logo {
+    font-size: 40px;
+    font-weight: 700;
+}
+.nav-container nav .logo a {
+    color: white;
+}
+.nav-container nav .logo a:hover {
+    color: #fec303;
+}
+.nav-container nav .logo span {
+    color: #fec303;
+}
+.nav-container nav .nav-links {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-container nav .nav-links a {
+    color: white;
+}
+.nav-container nav .nav-links a:hover{
+    color: #fec303;
+}
+.nav-container nav .nav-links li{
+    list-style: none;
+}
+.nav-container .hamburger {
+    height: 30px;
+    width: 35px;
+    display: none;
+}
+.nav-container .hamburger .line1 {
+    margin-top: 5px;
+    height: 4px;
+    width: 35px;
+    background-color: #fec303;
+}
+.nav-container .hamburger  .line2, .line3{
+    height: 4px;
+    width: 35px;
+    margin-top: 4px;
+    background-color: #fec303;
+}
+
+.sticky {
+    padding: 15px 0;
+    height: 60px;
+    background-color: black;
+}
+
+/* main container starts */
+.main-container {
+    background: url(/Images/20210521_184354.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+.main-container .welcome{
+    color: white;
+    margin: 150px 40%;
+    width: 60%;
+}
+.main-container .welcome h1 {
+    font-size: 80px;
+}
+.main-container .welcome h4 {
+    font-size: 40px;
+}
+.main-container .welcome h5 {
+    font-size: 30px;
+    color: #fec303;
+}
+.main-container .welcome span {
+    color: #fec303;
+}
+
+/* about container starts */
+.about-container {
+    padding: 100px 0;
+}
+.about-container .title{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.about-container .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform:translateX(-50%);
+}
+.about-container .title::after {
+    content: "who am i";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    color: #fec303;
+    font-size: 20px;
+    padding: 5px;
+    background: #fff;
+    transform:translateX(-50%);
+}
+.about-container .text-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about-container .text-content .left {
+    width: 45%;
+}
+.about-container .text-content .left img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+}
+.about-container img {
+    padding-left: 80px;
+}
+.about-container .text-content .right {
+    width: 55%;
+}
+.about-container .text-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.about-container .text-content .right .text span {
+    color: #fec303;
+}
+.about-container .text-content .right p {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 35px;
+    padding-right: 100px;
+}
+.about-container .text-content .right a {
+    display: inline-block;
+    color: #404040;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #fec303;
+    transition: all 0.5s ease-in-out;
+}
+.about-container .text-content .right a:hover{
+    color: #404040;
+    background: #fec303;
+}
+.about-container .text-content .column {
+    width: 50%;
+}
+
+/* Media Screen Starts */
+@media(max-width:840px) {
+    .nav-container nav .nav-links {
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        position: none;
+    }
+    .nav-container .hamburger {
+        display: none;
+    }
+    .main-container .welcome {
+        width: 60%;
+        margin: 150px 35%;
+        /* margin: auto; */
+    }
+    .main-container .welcome h1 {
+        font-size: 60px;
+    }
+    .main-container .welcome h4 {
+        font-size: 30px;
+    }
+    .main-container .welcome h5 {
+        font-size: 30px;
+        color: #fec303;
+    }
+    .about-container .text-content .left img {
+        width: 350px;
+        height: 350px;
+    }
+    .about-container .text-content .column {
+        width: 50%;
+    }
+    .about-container .text-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about-container .text-content .right {
+        flex: 100%;
+        text-align: center;
+    }
+    .about-container .text-content .right p {
+        padding-left: 100px;
+    }
+    .about-container img {
+        padding-left: 0px;
+    }
+}
+@media(min-width:575px) {
+    .nav-container nav .nav-links.responsive{
+        display: flex;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        width: 65%;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    .nav-container.sticky nav .nav-links {
+        top: 0% !important;
+    }
+}
+@media(min-width:841px) {
+    .nav-container nav .nav-links.responsive{
+        width: 45%;
+        justify-content: space-between;
+    }
+}
+@media(max-width:574px) {
+    .nav-container nav .nav-links{
+        display: none;
+    }
+    .nav-container nav .nav-links li {
+        padding: 14px 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-container .hamburger {
+        display: block;
+    }
+    .main-container {
+        background: url(/Images/Back.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .main-container .welcome {
+        width: 70%;
+        margin: 150px 30px auto auto;
+    }
+    .main-container .welcome h1 {
+        font-size: 50px;
+    }
+    .main-container .welcome h4 {
+        font-size: 25px;
+    }
+    .main-container .welcome h5 {
+        font-size: 25px;
+    }
+    .about-container .text-content .left img {
+        width: 200px;
+        height: 200px;
+    }
+    .about-container .text-content .right p {
+        text-align: justify;
+        font-size: 20px;
+        line-height: 35px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+.nav-container .nav-links.responsive {
+    display: block;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    left: -10%;
+    margin: 0%;
+    width: 120%;
+    background-color: black;
+}
+
+.toggle1 {
+    transform: rotate(45deg) translate(6px, 7px);
+}
+
+.toggle2 {
+    display: none;
+}
+
+.toggle3 {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.nav-container.sticky nav .nav-links {
+    top: 100%;
+}

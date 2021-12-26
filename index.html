@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya - Portfolio</title>
+    <!-- link to loader css file  -->
+    <link rel="stylesheet" href="./Css/loader.css">
+    <!-- link to dataaos cdn for scroll animation -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <!-- link to css file -->
+    <link rel="stylesheet" href="./Css/style.css">
+    <!-- Typed Js Cdn For Typing Animation  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Iconify Cdn For Icons  -->
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+</head>
+<body>
+    <div class="onloader" id="preloader">
+        <div class="cup" id="onload"></div>
+        <div class="loadertext" id="loadertext">
+            <h1 id="preload-title" class="loading">
+                <div class="loading-text">
+                    <span class="loading-text-words">L</span>
+                    <span class="loading-text-words">O</span>
+                    <span class="loading-text-words">A</span>
+                    <span class="loading-text-words">D</span>
+                    <span class="loading-text-words">I</span>
+                    <span class="loading-text-words">N</span>
+                    <span class="loading-text-words">G</span>
+                </div>
+            </h1>
+        <p id="preload-des">Take A Cup Of Coffee</p>
+        </div>
+    </div>
+    <!-- Header Section Starts Here  -->
+    <header class="navbar">
+        <div class="nav-content">
+            <div class="brand">
+                <h1 class="logo"><span>{</span>dev-surya<span>}</span></span></h1>
+            </div>
+            <ul class="navlinks" id="navlinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="theme">
+            <img src="./Theme/dark theme icon/sun.png" alt="" id="theme-icon">
+        </div>
+        <ul class="foonavlinks" id="foonavlinks">
+            <li><a href="#home" class="active"><span class="iconify" data-icon="heroicons-outline:home"></span></a></li>
+            <li><a href="#about"><span class="iconify" data-icon="bi:person-lines-fill" ></span></a></li>
+            <li><a href="#skills"><span class="iconify" data-icon="carbon:machine-learning-model"></span></a></li>
+            <li><a href="#contact"><span class="iconify" data-icon="fluent:chat-mail-20-filled"></span></a></li>
+        </ul>
+    </header>
+    <!-- Main Section Starts Here  -->
+    <main>
+        <section class="hero" id="home">
+            <div class="main-container" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <h3>hello world!!</h3>
+                <h1>I'm <span>Surya</span></h1>
+                <p><span class="typing"></span></p>
+                <div class="btn">
+                    <a href="http://wa.me/919361533079"><button>Hire Me</button></a>
+                    <a href="#contact"><button>Contact Me</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="about-widget" id="about">
+                <div class="aboutimg" data-aos="zoom-in-right">
+                    <img class="aboutlogo" src="./Images/Programming.svg" alt="aboutlogo">
+                </div>
+                <div class="about-des" data-aos="zoom-in-left">
+                    <h1 class="abouttitle">About Me</h1>
+                    <p class="aboutcont">An 19 y/o, Passionate In Developing & Designing Websites. Wanna want to be a Penetration Tester. Having Some Experience In Development & I'm a Self Learner, Still Learning New Technologies Daily. Apart From That I am Currently Pursuing ECE 3rd Yr Right Now.</p>
+                    <p class="abouttagword">Find My Content On <a href="https://www.youtube.com/channel/UCGuhWHXIhobET_RYILoj6fQ" target="_blank">Youtube</a></p>
+                </div>
+        </section>
+        <section class="skills" id="skills">
+            <h1 class="skilltitle">My Skills</h1>
+             <div class="skill-container">
+                 <div class="box1" data-aos="fade-up-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                     <div class="percent">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>95<span>%</span></h2>
+                        </div>
+                     </div>
+                     <h2 class="text">HTML</h2>
+                 </div>
+                 <div class="box2" data-aos="fade-down-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>90<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">CSS</h2>
+                </div>
+                <div class="box3" data-aos="fade-up-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>80<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">JavaScript</h2>
+                </div>
+                <div class="box3" data-aos="fade-down-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>80<span>%</span></h2>
+                        </div>
+                    </div>
+                    <h2 class="text">Bootstrap</h2>
+                </div>
+                <div class="box3" data-aos="fade-up-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>80<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">Wordpress</h2>
+                </div>
+                <div class="box4" data-aos="fade-down-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>60<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">Bash</h2>
+                </div>
+                <div class="box5" data-aos="fade-up-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>15<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">React</h2>
+                </div>
+                <div class="box5" data-aos="fade-down-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                    <div class="percent">
+                       <svg>
+                           <circle cx="70" cy="70" r="70"></circle>
+                           <circle cx="70" cy="70" r="70"></circle>
+                       </svg>
+                       <div class="number">
+                           <h2>15<span>%</span></h2>
+                       </div>
+                    </div>
+                    <h2 class="text">Python</h2>
+                </div>
+             </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="contacttitle">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contactdes">
+                    <form action="https://formspree.io/f/mrgrpwra" class="contactform" method="POST" id="my-form">
+                        <input type="text" name="name" placeholder="Your Name" id="NAME" required>
+                        <input type="email" placeholder="Your Email" name="mail from" id="EMAIL" required>
+                        <textarea cols="32" rows="7" placeholder="Your Message" name="message" id="MESSAGE" required=""></textarea>
+                        <p id="form-status" style="display: none;border: 1px solid black;padding: 5px 10px;margin: 10px 0px;background: black; box-shadow: 0 0 10px #E1E8EB;"></p>
+                        <button type="submit" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contactimg">
+                    <h1>Get In Touch</h1>
+                    <p class="description">Contact Me for Development Works. Get in Touch with me. Message me for your Works & Doubts</p>
+                    <div class="details">
+                       <div class="row1">
+                            <div class="column1">
+                                <span class="iconify" data-icon="raphael:user" style="color: #E1E8EB;"></span>
+                            </div>
+                            <div class="column2">
+                                <label><b>Name</b></label>
+                                <p>Surya</p>
+                            </div>
+                       </div>
+                        <div class="row2">
+                            <div class="column3">
+                                <span class="iconify" data-icon="carbon:location-person-filled" style="color: #E1E8EB;"></span>
+                            </div>
+                            <div class="column4">
+                                <label><b>Address</b></label>
+                                <p>Madurai, TamilNadu</p>
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="column5">
+                                <span class="iconify" data-icon="fluent:mail-open-person-16-filled" style="color: #E1E8EB;"></span>
+                            </div>
+                            <div class="column6">
+                                <label><b>Email</b></label>
+                                <p>suryamdu03@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section Starts Here  -->
+    <footer>
+        <div class="copyright">
+            <span>Made By<a href="#"> Surya</a></span>
+        </div>
+    </footer>
+    <!-- link to js file -->
+    <script src="/Js/script.js"></script>
+    <script src="./Js/themechanger.js"></script>
+    <!-- link to dataaos js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

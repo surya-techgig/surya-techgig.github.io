@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+/* Color Root Variables */
+:root {
+  --primary-color: #E1E8EB;
+  --secondary-color: red;
+  --bg-color: #343A40;
+  --txt-color:#3D3D3D; 
+  --main-color: #7952B3;
+  --nav-color: black;
+}
+  .onloader {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--nav-color);
+    z-index: 6;
+    color: var(--primary-color);
+  }
+  .cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 180px;
+    border: 6px solid var(--nav-color);
+    border-top: 2px solid transparent;
+    border-radius: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(../Images/fillcup.png);
+    background-position: 0px 350px;
+    background-repeat: repeat-x;
+    animation: filling 8s ease-in-out infinite;
+    box-shadow: 0 0 0 6px var(--primary-color), 0 20px 35px rgba(0,0,0,1);
+  }
+  
+  .cup:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    border: 6px solid var(--primary-color);
+    right: -68px;
+    top: 30px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+  .loadertext {
+    position: relative;
+    top: 30%;
+    font-family: 'Baloo 2', cursive;
+  }
+  #preload-title {
+    font-size: 30px;
+  }
+  #preload-des {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .loading {
+    position: relative;
+  }
+  
+  .loading-text {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+  .loading-text span {
+    display: inline-block;
+    margin: 0 5px;
+    color: var(--secondary-color);
+  }
+  .loading-text span:nth-child(1) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+            animation: blur-text 1.5s 0s infinite linear alternate;
+  }
+  .loading-text span:nth-child(2) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+            animation: blur-text 1.5s 0.2s infinite linear alternate;
+  }
+  .loading-text span:nth-child(3) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+            animation: blur-text 1.5s 0.4s infinite linear alternate;
+  }
+  .loading-text span:nth-child(4) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+            animation: blur-text 1.5s 0.6s infinite linear alternate;
+  }
+  .loading-text span:nth-child(5) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+            animation: blur-text 1.5s 0.8s infinite linear alternate;
+  }
+  .loading-text span:nth-child(6) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+            animation: blur-text 1.5s 1s infinite linear alternate;
+  }
+  .loading-text span:nth-child(7) {
+    filter: blur(0px);
+    -webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+            animation: blur-text 1.5s 1.2s infinite linear alternate;
+  }
+  
+  @-webkit-keyframes blur-text {
+    0% {
+      filter: blur(0px);
+    }
+    100% {
+      filter: blur(4px);
+    }
+  }
+  
+  @keyframes blur-text {
+    0% {
+      filter: blur(0px);
+    }
+    100% {
+      filter: blur(4px);
+    }
+  }
+
+  @keyframes filling {
+    50% {background-position: 3000px 0px;}
+    100% {background-position: 6000px 350px;}
+  }
+
+/* For Mobile Device */
+@media only screen and (max-width: 425px) {
+  .cup {
+    width: 120px;
+    height: 160px;
+  }
+  .cup:before {
+    width: 30px;
+    height: 60px;
+    right: -48px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+  }
+  #preload-title {
+    font-size: 25px;
+  }
+  #preload-des {
+    font-size: 18px;
+    text-align: center;
+  }
+}
